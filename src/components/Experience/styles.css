@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 40px;
+}
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+}
+.btn:hover {
+  color: #2caeba;
+}
+.active {
+  border-left: 3px solid #2caeba;
+  color: #2caeba;
+}
+.exp-section {
+  width: 70%;
+}
+.exp-section h3 {
+  color: #102a42;
+  font-size: 30px;
+  font-weight: lighter;
+}
+.exp-section h5 {
+  border-radius: 5px;
+  background-color: #dae2ec;
+  width: 70px;
+  padding: 10px;
+  color: #617d98;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.exp-section p {
+  color: #617d98;
+  font-size: 18px;
+  margin-top: 20px;
+}
+.job-desc {
+  display: flex;
+}
+.job-desc p {
+  color: #324d67;
+  margin-left: 25px;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+.job-icon {
+  color: #2caeba;
+  font-size: 16px;
+  /* margin-top: 20px; */
+  margin: 25px auto;
+}
+.title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  color: #102a42;
+}
+.underline {
+  border-bottom: 3px solid #2caeba;
+  width: 6%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .btn-section {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .exp-section {
+    padding-left: 10px;
+  }
+  .exp-section p {
+    text-align: justify;
+  }
+  .active {
+    border-bottom: 3px solid #2caeba;
+    border-left: none;
+  }
+  .underline {
+    width: 30%;
+  }
+}
